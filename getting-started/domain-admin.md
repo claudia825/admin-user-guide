@@ -1,40 +1,46 @@
 ---
-description: >-
-  The role of Domain Admin creates the top-level project group, creates users,
-  and sets the main collector.
+description: 'Domain Admin은 최상위 프로젝트 그룹을 만들고, 사용자를 생성하며, 주요 Collector를 설정합니다.'
 ---
 
 # Domain Admin
 
 ## Sign-in
 
-**STEP 1:** Drive to domain of **SpaceONE** on browser ****and type given ID and Password as domain admin.  
-**\(**E-mail received from the Root Account has stated detailed the connection methods; Single Sign On\(SSO\),  ID/PW, or Google Oauth2**\)**
+**`Domain Admin`** 은 일반 Log-in 페이지를 통해 Log-in 합니다. **`Root Account`**에게서 받은 이메일에 ID/Password 또는 Google Oauth2와 같은 Single-Sign-On 방식의 접속정보가 명시되어 있습니다.
+
+**`Domain Admin`** 은 최상위 프로젝트 그룹을 만들고, 사용자를 생성하며, 주요 **`Collector`**를 설정합니다.
+
+
+
+**STEP 1: `Domain Admin`Role 이 부여된 User로 Log-in 합니다.** 
 
 ![](../.gitbook/assets/screen-shot-2021-02-04-at-14.39.08.png)
 
-## Create Project Group
+## 프로젝트 그룹 생성
 
-All cloud resources **MUST** belong to a certain project for management purposese. You can grouping any projects with Project Group.   
-Domain Admin creates the project group based on the company's management policy.
+SpaceONE의 모든 자원은 특정 **`Project`**에 소속되어 있습니다. 또한,  **`Project Group`**은 **`Project`**를 그룹화합니다. 
+
+Domain Admin은 회사의 관리 정책에 따라서 최상위 **`Project Group`**을 생성합니다. 
 
 {% hint style="info" %}
-**Note&gt;** General User **\(Project Admin\)** creates projects only under project group with permission to manage cloud resources.   
+**`Project`** 생성 권한은 **`Project Admin`**으로 지정된 **`General User`** 에게 있습니다. 
 {% endhint %}
 
-**STEP 1:** Drive to menu **`Project`** at the top menu bar and click **`+ Create Group button`** of the panel.
+
+
+**STEP 1: 상단 Navigation에서 Project 선택 후, `Landing Zone`라는 이름으로 `Project Group`을 생성합니다.** 
 
 ![](../.gitbook/assets/create_top_project_group.png)
 
-**STEP 2:** Type project group name \(**sample case: Landing Zone**\) and Click Confirm.
+**STEP 2: `Services` 라는 이름으로 `Project Group`을 생성합니다.**
 
 ![](../.gitbook/assets/create_project_group_landingzone.png)
 
-**STEP 3:** Type project group name \(**sample case: Services**\) and click Confirm.
+**STEP 3: `Business Support System` 이라는 `Project Group`을 생성합니다.** 
 
 ![](../.gitbook/assets/create_project_group_services.png)
 
-**STEP 4:** Type project group name \(**sample case: Business Support Systems**\) and click Confirm.
+**STEP 4: SpaceONE console의 좌측 navigation 에서 생성된 `Project Group`을 확인할 수 있습니다.**
 
 ![](../.gitbook/assets/create_project_group_businesssupportsystems.png)
 
