@@ -44,141 +44,131 @@ Domain Admin은 회사의 관리 정책에 따라서 최상위 **`Project Group`
 
 ![](../.gitbook/assets/create_project_group_businesssupportsystems.png)
 
-**STEP 5:** Check all 3 project groups have created a tree on the left menu.
+**STEP 5: User Management 화면에서 Role과 Authorization Type이 매핑된 것을 확인할 수 있습니다.**
 
 ![](../.gitbook/assets/show_project_page.png)
 
 ## Create User
 
-Create general users and assign the project groups to the created user. General users can access only the project group to which they are belonged to.
+일반 사용자를 생성하여 **`Project Group`**에 할당합니다. 
 
-**STEP 1:** Drive to menu **`Identity > User`** at the top bar. 
+{% hint style="info" %}
+일반 사용자는 자신이 소속된 **`Project Group`** 의 리소스에만 접근 가능합니다. 
+{% endhint %}
+
+**STEP 1: 상단 네비게이션에 `Identity > User`** 로 이동합니다.
 
 ![](../.gitbook/assets/screen-shot-2021-02-04-at-14.16.22%20%281%29.png)
 
   
-**STEP 2:** Click **`+ Add`** button to add a domain Admin user.
+**STEP 2: `Add` 버튼을 클릭합니다.** 
 
 ![](../.gitbook/assets/screen-shot-2021-02-04-at-14.18.45%20%281%29.png)
 
-**STEP 3:** Fill out all required fields ****and click **`Confirm`** button once finish.
+**STEP 3: Project Admin 사용자 정보를 입력 한  추가합니다.** 
 
 ![](../.gitbook/assets/create_user1-1-.png)
 
-**STEP 4:** Drive to Project ****and click **MEMBER** icons at right next to **`+ Create Project`** button.
-
-![](../.gitbook/assets/screen-shot-2021-02-04-at-16.28.10.png)
-
-**STEP 5:** Click **`+ Add`** button and select members to add to the project group on the list at the pop-up window.
-
-![](../.gitbook/assets/screen-shot-2021-02-05-at-10.11.22.png)
-
-**STEP 6:** Click **`Confirm`** button when you finish to all members and set their role as project admin.
+**STEP 4: User를 Services 프로젝트 그룹에 매핑합니다.**
 
 ![](../.gitbook/assets/add_user2_to_project_group.png)
 
-\*\*\*\*
-
-**STEP 7:** Check all selected members have registered as project members.
+**STEP 5: User Management** 화면에서 **Role과 Authorization Type**이 매핑된 것을 확인할 수 있습니다.
 
 ![](../.gitbook/assets/screen-shot-2021-02-05-at-10.17.46.png)
 
 ## Cloud Resource Collectors
 
-**Cloud Resource Collector** \(a.k.a **CRC**\) is a plugin that collects cloud resources across platforms such as AWS, Google Cloud, Azure, CRC is set by Domain Admin only.
+**`Collector`**는 AWS, Google Cloud, Azure 등 클라우드 서비스의 자원을 수집하는 Plugin입니다. 
 
-**STEP 1:** Drive to Menu **`Plugin > Collector`**and Click **`+ Create`**button.
+**`Domain Admin`**이 **`Collector`**에 대한 정보를  설정합니다. 
+
+
+
+SpaceONE 상단 navigation의 **`Plugin` -`Collector`** 를 선택한 후, **`Create`** 버튼을 클릭해 Collector를 생성합니다.
 
 ![](../.gitbook/assets/create_collector.png)
 
 
 
-### **Create AWS EC2 Collector**
+### **AWS EC2 Collector 생성**
 
-**STEP 1:** Select **AWS-ec2** plugin and Click **`+ Create`** Button. ****
+**STEP 1: Market place 에서 `aws-ec2` 플러그인을 선택합니다.**
 
 \*\*\*\*
 
 ![](../.gitbook/assets/select_aws_ec2_plugin.png)
 
-**STEP 2:** Please, fill out all required fields and select drop downs for each steps \(**add tags** is optional\) and Click **`Confirm`** button to create **AWS EC2 collector**.
+**STEP 2: AWS EC2 `collector` 를 생성합니다.**
 
 ![](../.gitbook/assets/create_aws_personal_health_dashboard_collector.png)
 
 
 
-### **Create AWS Cloud Services Collector** 
+### **AWS Cloud Services Collector 생성**
 
-**STEP 1:** Select AWS**-cloud-services** plugin and Click **`+ Create`** Button. ****
+**STEP 1: Market-place 에서 `aws-cloud-services` 플러그인을 선택합니다.**
 
 ![](../.gitbook/assets/select_aws_cloud_services_plugin-1-%20%282%29.png)
 
   
-**STEP 2:** Please, fill out all required fields and select drop downs for each steps \(**Add Tags** is Optional\) and Click **`Confirm`** button to create **AWS Cloud Service Collecto**r.
+**STEP 2: AWS Cloud Service Collector 를 생성합니다.** 
 
 ![](../.gitbook/assets/screen-shot-2021-02-05-at-13.46.13.png)
 
 \*\*\*\*
 
-### **Create AWS  Trusted Advisor Collector** 
+### **AWS  Cloud Service Collector 생성**
 
-**STEP 1:** Select **AWS-trusted-advisor** plugin and Click **`+ Create`** Button. ****
+**STEP 1: Market-place 에서 `aws-cloud-services` 플러그인을 선택합니다.**
 
 ![](../.gitbook/assets/screen-shot-2021-02-05-at-13.53.03%20%281%29.png)
 
-**STEP 2:** Please, fill out all required fields and select drop downs for each steps \(**add Tags** is optional\) and Click **`Confirm`** button to create **AWS Trusted Advisor collecto**r.
+**STEP 2: AWS trusted advisor `collector`를 생성합니다.** 
 
 ![](../.gitbook/assets/create_aws_trusted_advisor_collector.png)
 
 \*\*\*\*
 
-### **Create AWS Health Dashboard Collector** 
+### **AWS Health Dashboard Collector 생성**
 
-**STEP 1:** Select **AWS-personal-health-dashboard** plugin and Click **`+ Create`** Button. ****
+**STEP 1: Market-place 에서 `aws-cloud-services` 플러그인을 선택합니다.**
 
 ![](../.gitbook/assets/select_aws_cloud_services_plugin-1-%20%281%29.png)
 
-**STEP 2:** Please, fill out all required fields and select drop downs for each steps \(**add Tags** is optional\) and Click **`Confirm`** button to create **AWS Health Dashboard collector**.
+**STEP 2: AWS Personal Health Dashboard `collector`를 생성합니다.** 
 
 ![](../.gitbook/assets/create_aws_personal_health_dashboard_collector%20%281%29.png)
 
 \*\*\*\*
 
-### **Create Monitoring Metric Collector** 
+### **AWS Metric Collector 생성**
 
-**STEP 1:** Select **monitoring-metric-collector** plugin and Click **`+ Create`** Button. ****
+**STEP 1: Market-place 에서 `aws-cloud-services` 플러그인을 선택합니다.**
 
 ![](../.gitbook/assets/select_aws_cloud_services_plugin-1-.png)
 
-**STEP 2:** Please, fill out all required fields and select drop downs for each steps \(**add Tags** is optional\) and click **`Confirm`** button.
+**STEP 2: Spaceone-Monitoring Metric `Collector`를 생성합니다.** 
 
 ![](../.gitbook/assets/screen-shot-2021-02-05-at-13.46.13%20%281%29.png)
 
-**FINAL STEP:** Check all created collectors on the collector list.
+생성된 전체 **`collector`** 목록을 확인합니다.
 
 ![](../.gitbook/assets/screen-shot-2021-02-05-at-13.53.03.png)
 
-## Set collection schedule
+## Update Schedule
 
-The schedule is to set the collection time so that the collectors run the jobs periodically to collect cloud resources.
+Schedule 설정을 통해, 생성된 **`Collector`** 들의 수집주기를 설정하고 주기적으로 클라우드 자원을 수집합니다.   
 
-**STEP 1:** Click the **Schedule** tab on the bottom\(detail\) page of the selected collector.
+
+
+**STEP 1: Schedule을 설정하고 싶은 `Collector`를 선택한 뒤, 하단 `Schedule` 탭의 `Add` 버튼을 클릭합니다.** 
 
 ![](../.gitbook/assets/screen-shot-2021-02-05-at-14.02.50.png)
 
-**STEP 2:**  Click **`+ Add`** button; Fill out Name and Time zone, and Select Schedule Frequency and then Click **`Confirm`** button once the schedule setting is finished. 
-
-{% hint style="info" %}
-1. Set '**Hourly schedule**' which runs everyday at selected hour 
-2. Set '**Repeat Every \***' which runs every given intervals in seconds, minutes or hours.
-{% endhint %}
+**STEP 2: 매 4시간 마다 수집하는 `Collector`를 생성합니다.**
 
 ![](../.gitbook/assets/add_schedule_to_collector.png)
-
-
-
-  
-**STEP3:** Check whether the collector schedule is registered on the collector.
 
 ![](../.gitbook/assets/list_collector_schedules.png)
 
