@@ -1,14 +1,12 @@
 ---
-description: >-
-  Quick Guide for user to set up Monitoring Metric Collectors for Servers over
-  Clouds
+description: 쉽고 빠르게 서버의 Metric Collector를 설정하기 위한 가이드 입니다.
 ---
 
 # Metric Collector Quick Start
 
 ## How to Set up
 
-Collect monitoring metric data through the following steps:
+아래와 같은 절차를 통해 Monitoring metric 정보를 수집 할 수 있습니다. 
 
 * [Prerequisites](metric-collector-quick-start.md#prerequisites)
 * [Get API Key for SpaceONE Service Account](metric-collector-quick-start.md#get-api-key-for-spaceone-service-account)
@@ -16,72 +14,74 @@ Collect monitoring metric data through the following steps:
 * [Monitoring Metric Information](metric-collector-quick-start.md#monitoring-metric-information) 
 * [Collecting Monitoring Metric Type](metric-collector-quick-start.md#collecting-monitoring-metric-type)
 
-## Prerequisites
+## 사전 준비
 
-Monitoring Metric Collector requires SpaceOne Service Account to collect various vendors includes AWS, Google Cloud, Azure, etc.
+SpaceONE의 Metric Collector를 사용하기 위해서는 Provider에서 제공하는 SpaceONE Service Account를 필요로 합니다. 등록 절차는 아래를 참고해 주세요.
 
-## Get API Key for SpaceONE Service Account
 
-Before adding Service Account \(SpaceONE\), you need API Key for SpaceONE.
+
+## Service Account를 위한 API Key 얻기
+
+Service Account \(SpaceONE\)를 추가하기 전에, SpaceONE Service Provider용 API Key가 필요 합니다. 
 
 {% hint style="info" %}
-**We currently provide API-Key via administrator only.  
-Please, contact your domain administrator of SpaceONE If you don't have an API-Key for SpaceONE service account or send an e-mail for more support \(**_**support@spaceone.dev**_**\)**
+API-Key는 시스템 관리자를 통해 제공되고 있습니다. SpaceONE Service Account 용도의 API-Key가 없을 경우 도메인 관리자에게 문의 하거나 support@spaceone.dev 로 이메일 문의가 필요 합니다. 
 {% endhint %}
 
-## Register SpaceOne Service Account \(Ex. Metric Collector\)
+## SpaceOne Service Account 등록 \(Ex. Metric Collector\)
 
-Register SpaceONE service account, at **Identity** &gt; **Service Account**
+SpaceONE의 Service Account 등록은 **Identity** &gt; **Service Account** 에서 가능 합니다. 
 
-Select **SpaceONE** on Service Provider, and then click +**Add** button.
+Service Provider를 선택한 후, **+Add** 버튼을 클릭 하세요.
 
 ![](../.gitbook/assets/screen-shot-2020-12-30-at-13.16.21.png)
 
-Register SpaceONE Service Account with following steps,
+아래의 절차를 통핸 SpaceONE Service Account를 등록할 수 있습니다.  
 
-1. Name Service account
-2. Set User ID
-3. Put Credentials \(API Key info\)
+1. Service Account 이름
+2. 사용자 ID 입력
+3. Credential 입력 \(API Key 정보\)
 
 ![](../.gitbook/assets/screen-shot-2020-12-30-at-13.27.39.png)
 
-Configure credentials which has obtained from domain administrator after set service account name and user ID.
+  
+Service Account 이름과 사용자 ID를 입력한 후에는 도메인 관리자로부터 얻은 Credential을 설정 합니다.‌
 
-You will get a three following items as credential inputs
+Credential 입력 값은 아래와 같습니다.‌
 
 1. _API Key_
 2. _API Key ID_
 3. _Identity Endpoint_
 
-All those fields are mandatory.
+모든 값은 필수 입력 항목입니다.
 
 ![](../.gitbook/assets/image-81-.png)
 
 {% hint style="info" %}
-**DO NOT assign a project for Monitoring Metric collector Service.**
+Monitoring Metric collector Service에서는 Project를 할당하지 않아야 합니다. 
 
-You can SKIP this step.
+해당 절차는 skip 할 수 있습니다.
 {% endhint %}
 
-## Monitoring Metric Information
+## Monitoring Metric 정보 확인
 
-You can check collected monitoring Metric data information at **Inventory** &gt; **Server** list.  
-**Note:** **Recommend Monitoring-metric-collector schedule is a once in day.**
+**Inventory** &gt; **Server** 에서 수집된 Monitoring Metric 정보를 확인할 수 있습니다. 
+
+**참고:  Monitoring-metric-collector 의 수집은 하루에 1회를 권장 합니다.** 
 
 ![](../.gitbook/assets/screen-shot-2020-12-30-at-13.53.25.png)
 
-Monitoring metric's values will be updated once collector's job has finished.
+Collector Job이 완료된 후에는 Monitoring metric 이 업데이트 됩니다. 
 
 ![](../.gitbook/assets/screen-shot-2020-12-30-at-14.41.37.png)
 
-Check all collected Monitoring data at **"Raw Data"** tab within path of _**Data -&gt; Monitoring**_
+실제 수집된 데이터는 **Data -&gt; Monitoring**의 **"Raw Data"** 탭에서 확인 가능합니다. 
 
-## Collecting Monitoring Metric Type
+## Monitoring 수집 Metric 항목
 
 {% hint style="info" %}
-Default metric type that collects via **version 1.5.3.**
-
-**Note**: Monitoring Metric Type will keep updating.
+기본 metric type은 version 1.5.3 이후로 지원 됩니다.   
+**참고: Monitoring Metric 항목은 지속 업데이트 됩니다.**
 {% endhint %}
 
 ### Default Metric Stat
